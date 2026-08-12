@@ -20,7 +20,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://youtube-ms.vercel.app"
+      "https://youtube-ms.vercel.app",
+      "https://youtube-ms-frontend.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
