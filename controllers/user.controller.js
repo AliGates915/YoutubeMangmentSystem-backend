@@ -34,6 +34,7 @@ const formatUser = (user) => ({
   email: user.email,
   role: user.role,
   accountStatus: user.accountStatus,
+  allChannelAccess: hasAllChannelAccess(user.role),
   assignedChannels: normalizeAssignedChannelsForResponse(user),
   lastLogin: user.lastLogin,
   createdAt: user.createdAt,
@@ -49,6 +50,7 @@ const formatUserForTable = (user) => ({
   },
   role: user.role,
   accountStatus: user.accountStatus,
+  allChannelAccess: hasAllChannelAccess(user.role),
   assignedChannels: normalizeAssignedChannelsForResponse(user),
   lastLogin: user.lastLogin,
 });

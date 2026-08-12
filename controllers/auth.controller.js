@@ -15,6 +15,7 @@ const formatUser = (user) => ({
   email: user.email,
   role: user.role,
   accountStatus: user.accountStatus,
+  allChannelAccess: hasAllChannelAccess(user.role),
   assignedChannels: normalizeAssignedChannelsForResponse(user),
   lastLogin: user.lastLogin,
 });
